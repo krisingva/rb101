@@ -24,7 +24,8 @@ def valid_loan_duration?(num)
   num.to_i.to_s == num && num.to_i >= 10 && num.to_i <= 30
 end
 
-def retrieve_loan_amount(loan)
+def retrieve_loan_amount
+  loan = ''
   loop do
     puts MESSAGES['loan_amount']
     loan = gets.chomp
@@ -39,7 +40,8 @@ def retrieve_loan_amount(loan)
   loan
 end
 
-def retrieve_apr(apr)
+def retrieve_apr
+  apr = ''
   loop do
     puts MESSAGES['apr']
     apr = gets.chomp
@@ -54,7 +56,8 @@ def retrieve_apr(apr)
   apr
 end
 
-def retrieve_loan_duration(loan_in_years)
+def retrieve_loan_duration
+  loan_in_years = ''
   loop do
     puts MESSAGES['loan_duration']
     loan_in_years = gets.chomp
@@ -103,19 +106,11 @@ end
 puts MESSAGES['welcome']
 
 loop do # start of main loop
-  loan = ''
-  loan = retrieve_loan_amount(loan)
-
-  apr = ''
-  apr = retrieve_apr(apr)
-
-  loan_in_years = ''
-  loan_in_years = retrieve_loan_duration(loan_in_years)
-
+  loan = retrieve_loan_amount
+  apr = retrieve_apr
+  loan_in_years = retrieve_loan_duration
   calculate_monthly_payment(loan, apr, loan_in_years)
-
   answer = retrieve_new_calculation
-
   break if new_calculation?(answer)
 end # end of main loop
 
