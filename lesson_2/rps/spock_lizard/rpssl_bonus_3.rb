@@ -1,5 +1,6 @@
 VALID_CHOICES = %w(rock paper scissors spock lizard)
 VALID_INPUT = %w(r p sc sp l)
+SCORE_TO_WIN = 5
 score_player = 0
 score_computer = 0
 
@@ -46,7 +47,7 @@ end
 
 def player_score(player, computer, score_player)
   if win?(player, computer)
-    score_player += 1
+    score_player + 1
   else
     score_player
   end
@@ -54,7 +55,7 @@ end
 
 def computer_score(player, computer, score_computer)
   if win?(computer, player)
-    score_computer += 1
+    score_computer + 1
   else
     score_computer
   end
@@ -65,21 +66,36 @@ def display_score(score_player, score_computer)
 end
 
 def final_winner(score_player, score_computer)
-  if score_player == 5
+  if score_player == SCORE_TO_WIN
     prompt("You are the grand winner!")
-  elsif score_computer == 5
+  elsif score_computer == SCORE_TO_WIN
     prompt("I am the grand winner!")
   else
     prompt("Let's go another round.")
   end
 end
 
-until score_player == 5 || score_computer == 5
+def clear(score_player, score_computer)
+  unless score_player == SCORE_TO_WIN || score_computer == SCORE_TO_WIN
+    prompt("Please press enter when you are ready for the next round.")
+    gets().chomp()
+    system('clear') || system('cls')
+  end
+end
+
+def match_ended?(score_player, score_computer)
+  score_player == SCORE_TO_WIN || score_computer == SCORE_TO_WIN
+end
+
+prompt("Welcome to the Rock, Paper, Scissors, Spock, Lizard game!")
+prompt("We will play multiple rounds, the first player to reach 5 points wins.")
+
+until match_ended?(score_player, score_computer)
   choice = ''
   loop do
     prompt("Choose one: #{VALID_INPUT.join(', ')}")
     prompt("(r = rock, p = paper, sc = scissors, sp = spock or l = lizard)")
-    choice = Kernel.gets().chomp()
+    choice = Kernel.gets().chomp().downcase()
 
     if VALID_INPUT.include?(choice)
       break
@@ -99,6 +115,7 @@ until score_player == 5 || score_computer == 5
   score_player = player_score(choice, computer_choice, score_player)
   score_computer = computer_score(choice, computer_choice, score_computer)
   display_score(score_player, score_computer)
+  clear(score_player, score_computer)
   final_winner(score_player, score_computer)
 
 end
