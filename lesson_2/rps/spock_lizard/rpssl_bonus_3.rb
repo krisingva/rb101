@@ -11,7 +11,6 @@ MOVES_THAT_WIN = {
 score_player = 0
 score_computer = 0
 
-
 def prompt(message)
   Kernel.puts("=> #{message}")
 end
