@@ -1,8 +1,16 @@
 VALID_CHOICES = %w(rock paper scissors spock lizard)
 VALID_INPUT = %w(r p sc sp l)
 SCORE_TO_WIN = 5
+MOVES_THAT_WIN = {
+  rock: ["lizard", "scissors"],
+  paper: ["spock", "rock"],
+  scissors: ["lizard", "paper"],
+  spock: ["rock", "scissors"],
+  lizard: ["spock", "paper"]
+}
 score_player = 0
 score_computer = 0
+
 
 def prompt(message)
   Kernel.puts("=> #{message}")
@@ -24,15 +32,8 @@ def full_words(letter)
 end
 
 def win?(first, second)
-  moves_that_win = {
-    rock: ["lizard", "scissors"],
-    paper: ["spock", "rock"],
-    scissors: ["lizard", "paper"],
-    spock: ["rock", "scissors"],
-    lizard: ["spock", "paper"]
-  }
   symbol = first.to_sym
-  moves_that_win.fetch(symbol).include?(second)
+  MOVES_THAT_WIN.fetch(symbol).include?(second)
 end
 
 def display_results(player, computer)
