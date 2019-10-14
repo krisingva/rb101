@@ -30,4 +30,11 @@ puts Date.new(2016, 5, 13)
 # 2016-05-01
 # 2016-05-13
 
-# TIL: require 'date' loads the Date class. Date.new takes arguments in order of year, month, day. If no argument is given, Date.new will give the Julian year number(-4712), followed by 01 for month, followed by 01 for date. From documentation: new([year=-4712[, month=1[, mday=1[, start=Date::ITALY]]]]) → date. The use of brackets shows that all of the arguments are optional. The nesting of brackets is used to indicate that arguments missing will result in the remaining values being omitted. For example if you omit the month, you must omit mday and start.
+# TIL: require 'date' loads the Date class. Date.new takes arguments in order of
+# year, month, day. If no argument is given, Date.new will give the Julian year
+# number(-4712), followed by 01 for month, followed by 01 for date. From
+# documentation: new([year=-4712[, month=1[, mday=1[, start=Date::ITALY]]]]) →
+# date. The use of brackets shows that all of the arguments are optional. The
+# nesting of brackets is used to indicate that arguments missing will result in
+# the remaining values being omitted. For example if you omit the month, you
+# must omit mday and start.
