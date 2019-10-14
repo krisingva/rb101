@@ -8,5 +8,4 @@ mod_array[6] = "urgent"
 advice = mod_array.join(' ')
 p advice
 
-# LS answer:
-# advice.gsub!('important', 'urgent')
+# LS answer: advice.gsub!('important', 'urgent')
