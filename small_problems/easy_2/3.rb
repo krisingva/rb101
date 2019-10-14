@@ -1,5 +1,7 @@
 # Tip calculator
-# Create a simple tip calculator. The program should prompt for a bill amount and a tip rate. The program must compute the tip and then display both the tip and the total amount of the bill.
+# Create a simple tip calculator. The program should prompt for a bill amount
+# and a tip rate. The program must compute the tip and then display both the tip
+# and the total amount of the bill.
 
 # Example:
 
@@ -10,7 +12,9 @@
 # The total is $230.0
 
 # Further Exploration
-# Our solution prints the results as $30.0 and $230.0 instead of the more usual $30.00 and $230.00. Modify your solution so it always prints the results with 2 decimal places.
+# Our solution prints the results as $30.0 and $230.0 instead of the more usual
+# $30.00 and $230.00. Modify your solution so it always prints the results with
+# 2 decimal places.
 
 # Hint: You will likely need Kernel#format for this.
 

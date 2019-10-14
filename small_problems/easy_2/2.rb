@@ -1,4 +1,5 @@
-# Build a program that asks a user for the length and width of a room in meters and then displays the area of the room in both square meters and square feet.
+# Build a program that asks a user for the length and width of a room in meters
+# and then displays the area of the room in both square meters and square feet.
 
 # Note: 1 square meter == 10.7639 square feet
 
@@ -18,7 +19,8 @@
 # width = gets.chomp.to_i
 # area_meter = length * width
 # area_feet = area_meter * 10.7639
-# puts "The area of the room is #{area_meter} square meters (#{area_feet} square feet)."
+# puts "The area of the room is #{area_meter} square meters (#{area_feet} square
+# feet)."
 
 # LS solution:
 # SQMETERS_TO_SQFEET = 10.7639
@@ -36,7 +38,8 @@
 #      "square meters (#{square_feet} square feet)."
 
 # Further Exploration
-# Modify this program to ask for the input measurements in feet, and display the results in square feet, square inches, and square centimeters.
+# Modify this program to ask for the input measurements in feet, and display the
+# results in square feet, square inches, and square centimeters.
 
 SQ_FEET_TO_INCHES = 144.00
 SQ_FEET_TO_CM = 929.03

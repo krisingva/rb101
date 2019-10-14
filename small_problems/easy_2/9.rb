@@ -20,4 +20,5 @@
 # Will print out:
 # BOB
 # BOB
-# We are mutating the object that both variables point to by using the String#upcase! method
+# We are mutating the object that both variables point to by using the
+# String#upcase! method

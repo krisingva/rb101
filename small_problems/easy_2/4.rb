@@ -1,4 +1,5 @@
-# Build a program that displays when the user will retire and how many years she has to work till retirement.
+# Build a program that displays when the user will retire and how many years she
+# has to work till retirement.
 
 # Example:
 
@@ -7,7 +8,6 @@
 
 # It's 2016. You will retire in 2056.
 # You have only 40 years of work to go!
-# Hide Solution & Discussion
 
 require 'date'
 

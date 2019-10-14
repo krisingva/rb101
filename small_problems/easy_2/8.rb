@@ -1,5 +1,7 @@
 # Sum or Product of Consecutive Integers
-# Write a program that asks the user to enter an integer greater than 0, then asks if the user wants to determine the sum or product of all numbers between 1 and the entered integer.
+# Write a program that asks the user to enter an integer greater than 0, then
+# asks if the user wants to determine the sum or product of all numbers between
+# 1 and the entered integer.
 
 # Examples:
 
@@ -31,7 +33,9 @@
 
 # Data structure: Either range or array
 
-# Algorithm: iterate over items in collection, for each iteration either add the item to a total (using +=) or add the value of current total multiplied by item to total (using *=)
+# Algorithm: iterate over items in collection, for each iteration either add the
+# item to a total (using +=) or add the value of current total multiplied by
+# item to total (using *=)
 
 puts ">> Please enter an integer greater than 0:"
 number = gets.chomp.to_i
@@ -53,7 +57,8 @@ else
   puts "invalid operation"
 end
 
-# LS Solution (uses Int#upto method and puts the sum and product computing into methods):
+# LS Solution (uses Int#upto method and puts the sum and product computing into
+# methods):
 # def compute_sum(number)
 #   total = 0
 #   1.upto(number) { |value| total += value }
@@ -83,9 +88,14 @@ end
 # end
 
 # Further Exploration
-# The compute_sum and compute_product methods are simple and should be familiar. A more rubyish way of computing sums and products is with the Enumerable#inject method. #inject is a very useful method, but if you've never used it before, it can be difficult to understand.
+# The compute_sum and compute_product methods are simple and should be familiar.
+# A more rubyish way of computing sums and products is with the
+# Enumerable#inject method. #inject is a very useful method, but if you've never
+# used it before, it can be difficult to understand.
 
-# Take some time to read the documentation for #inject. (Note that all Enumerable methods can be used on Array.) Try to explain how it works to yourself.
+# Take some time to read the documentation for #inject. (Note that all
+# Enumerable methods can be used on Array.) Try to explain how it works to
+# yourself.
 
 # Try to use #inject in your solution to this problem.
 
