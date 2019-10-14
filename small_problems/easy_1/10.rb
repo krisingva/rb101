@@ -1,6 +1,8 @@
 # What's my Bonus?
 
-# Write a method that takes two arguments, a positive integer and a boolean, and calculates the bonus for a given salary. If the boolean is true, the bonus should be half of the salary. If the boolean is false, the bonus should be 0.
+# Write a method that takes two arguments, a positive integer and a boolean, and
+# calculates the bonus for a given salary. If the boolean is true, the bonus
+# should be half of the salary. If the boolean is false, the bonus should be 0.
 
 # Examples:
 # puts calculate_bonus(2800, true) == 1400
@@ -12,7 +14,8 @@
 # Input: positive integer, boolean
 # Output: integer
 
-# Algorithm: If boolean true, divide the integer by 2 to get output. If boolean false, output is 0.
+# Algorithm: If boolean true, divide the integer by 2 to get output. If boolean
+# false, output is 0.
 
 def calculate_bonus(number, boolean)
   if boolean == true
