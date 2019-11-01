@@ -54,7 +54,11 @@ p my_numbers
 
 # rather than returning a new array, this method returns a reference to the
 # (mutated) original array
-# lines 7 and 8 can be shortened to 1 line: numbers[counter] = numbers[counter] * 2. This, in turn, can be further condensed to numbers[counter] *= 2.
+# the following lines:
+# current_number = numbers[counter]
+# numbers[counter] = current_number * 2
+# can be shortened to 1 line: numbers[counter] = numbers[counter] * 2.
+# This, in turn, can be further condensed to numbers[counter] *= 2.
 # Now we can check our method like this.
 
 # my_numbers = [1, 4, 3, 7, 2, 6]
