@@ -1,9 +1,0 @@
-# mortgage_messages
-welcome: '> Welcome to the mortgage calculator!'
-loan_amount: '> Please insert loan amount in USD: (amount should be in the range 100000-10000000)'
-invalid_number: '> This is an invalid number.'
-apr: '> Please insert Annual Percentage Rate (APR) in %: (APR should be in the range 0.1-99.9)'
-loan_duration: '> Please enter loan duration in years: (loan duration should be in the range 10-30)'
-another_calculation: '> Would you like to do another calculation? (y/n)'
-invalid_answer: '> That is an invalid answer. Please only use y or n.'
-exit_message: '> Thank you for using the mortgage calculator. I hope it was helpful!'

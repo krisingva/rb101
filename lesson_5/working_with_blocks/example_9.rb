@@ -1,13 +1,15 @@
 # This example contains a triple-level nested array. Take your time and try to
 # break down each component. Hint: the top-level array is a 2-element array.
 
-[[[1], [2], [3], [4]], [['a'], ['b'], ['c']]].map do |element1|
+a = [[[1], [2], [3], [4]], [['a'], ['b'], ['c']]].map do |element1|
   element1.each do |element2|
     element2.partition do |element3|
       element3.size > 0
     end
   end
 end
+
+p a
 
 # map will iterate through the second level arrays (element1):
 # [[1], [2], [3], [4]] and [['a'], ['b'], ['c']]
