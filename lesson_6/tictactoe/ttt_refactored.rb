@@ -158,7 +158,6 @@ def center_square(brd)
   square
 end
 
-
 def computer_places_piece!(brd)
   square = offense!(brd)
   square = defense!(brd) if square == ''
