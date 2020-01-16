@@ -133,7 +133,7 @@ def compare_totals(arr)
 end
 
 def winner_of_round(winner)
-  if winner != ''
+  if winner?(winner)
     prompt "#{winner} won!"
   else
     prompt "It's a tie!"
@@ -173,9 +173,9 @@ end
 
 def display_total_winner(player_rounds, dealer_rounds)
   if player_rounds.size == ROUNDS_FOR_WIN
-    prompt "Player has won the game with 5 rounds!"
+    prompt "Player has won the game with #{ROUNDS_FOR_WIN} rounds!"
   elsif dealer_rounds.size == ROUNDS_FOR_WIN
-    prompt "Dealer has won the game with 5 rounds!"
+    prompt "Dealer has won the game with #{ROUNDS_FOR_WIN} rounds!"
   end
 end
 
