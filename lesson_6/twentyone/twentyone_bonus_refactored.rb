@@ -103,12 +103,6 @@ def calculate_with_aces(cards)
   total
 end
 
-# def play_again
-#   prompt "Would you like to play again? (y/n)"
-#   ans = gets.chomp
-#   ans.downcase[0]
-# end
-
 ans = ''
 def play_again(ans)
   loop do
