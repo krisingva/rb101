@@ -1,0 +1,13 @@
+# This example is “a bit” longer. Let’s break it down line by line.
+
+def example(str)
+  i = 3
+  loop do
+    puts "str"
+    i -= 1
+    break if i == 0
+  end
+end
+
+example('hello')
+
