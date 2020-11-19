@@ -1,0 +1,9 @@
+# mortgage_messages
+welcome: '> Welcome to the mortgage calculator!'
+loan_amount: '> Please insert loan amount in USD:'
+invalid_number: '> This is an invalid number.'
+apr: '> Please insert Annual Percentage Rate in %:'
+loan_duration: '> Please enter loan duration in years:'
+integers_only: '> This is an invalid number, only integers should be entered!'
+another_calculation: '> Would you like to do another calculation? (Y/N)'
+exit_message: '> Thank you for using the mortgage calculator. I hope it was helpful!'

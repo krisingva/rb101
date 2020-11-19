@@ -7,3 +7,5 @@ def remove_evens!(arr)
   end
   arr
 end
+
+p remove_evens!([1, 2, 3])
